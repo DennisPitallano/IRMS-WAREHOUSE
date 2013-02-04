@@ -1,0 +1,127 @@
+﻿/* File Created: May 6, 2012 */
+ .MemoForm
+    {
+        width : 400px;
+        background-color: #999999;
+    }
+    .MemoFormTitle 
+    {
+        background-color: #C9C9C9;
+        height : 25px;
+        line-height: 25px;
+    }
+   
+    .btnAdd 
+   {
+         font-family:Verdana ;
+        font-weight :bold;
+        font-size: 12px;
+        height : 25px;
+        text-align :right;
+        background:url('../Resources/new.png');
+        background-repeat:no-repeat;
+        background-position:left;
+        background-color: #C9C9C9;
+        color:#FCFCFC;
+        width: 63px;
+        cursor:pointer;
+   }
+   .btnAdd:hover
+     {
+        background:url('../Resources/new.png');
+        background-repeat:no-repeat;
+        background-position:left;
+        background-color: #C9C9C9;
+     }
+      .btnCancel
+   {
+         font-family:Verdana ;
+        font-weight :bold;
+        font-size: 12px;
+        height : 25px;
+        text-align :right;
+        background-image:url('../Resources/cancel_gray.png'), -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#848484), color-stop(0.6, #a1a1a1));
+        background-image : url('../Resources/cancel_gray.png'), -moz-linear-gradient(top, #c9c9c9, #848484, #a1a1a1 90%);
+        background-repeat:no-repeat;
+        background-position:left;
+        color:#FCFCFC;
+        padding-left: 22px;
+        cursor:pointer;
+   }
+   .btnCancel:hover
+     {
+        background-image:url('../Resources/cancel_normal.png')-webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#848484), color-stop(0.6, #a1a1a1));
+        background-image : url('../Resources/cancel_normal.png'), -moz-linear-gradient(top, #c9c9c9, #848484, #a1a1a1 90%);
+        background-repeat:no-repeat;
+        background-position:left;
+         color:#FFFFCC;
+     }
+          
+    .preview_lbl
+          {
+              color: #FFFFCC;
+              font-family:Verdana;
+              text-align :right;
+              font-size :10px;
+              font-weight :bold;
+          }
+    .preview_lbl_t
+          {
+              font-family:Verdana;
+              text-align :right;
+              font-size:11px;
+          }
+    .preview_lbl_
+          {
+              font-family:Verdana;
+              text-align :center;
+          }
+  
+     .btnConfirmYes
+    {
+        font-family:Verdana ;
+        font-weight :bold;
+        font-size: 11px;
+        height : 30px;
+        text-align :right;
+        background:url('../Resources/yes.png');
+        background-repeat:no-repeat;
+        background-position:left;
+        background-color: #C9C9C9;
+        color:#FCFCFC;
+        width: 60px;
+        height:30px;
+        cursor:pointer;
+    }
+    .btnConfirmYes:hover
+    {
+        background:url('../Resources/yes.png');
+          background-repeat :no-repeat;
+          background-position:left;
+          background-color: #C9C9C9;
+          color:#FFFFCC;
+    }
+       .btnConfirmNo
+    {
+        font-family:Verdana ;
+        font-weight :bold;
+        font-size: 11px;
+        height : 30px;
+        text-align :right;
+        background:url('../Resources/no.png');
+        background-repeat:no-repeat;
+        background-position:left;
+        background-color: #C9C9C9;
+        color:#FCFCFC;
+        width: 60px;
+        height:30px;
+        cursor:pointer;
+    }
+    .btnConfirmNo:hover
+    {
+        background:url('../Resources/no.png');
+          background-repeat :no-repeat;
+          background-position:left;
+          background-color: #C9C9C9;
+          color:#FFFFCC;
+    }

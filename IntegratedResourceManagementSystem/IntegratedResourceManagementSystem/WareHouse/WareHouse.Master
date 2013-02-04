@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WareHouse.master.cs" Inherits="IntegratedResourceManagementSystem.WareHouse.WareHouse" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register  Src="~/WareHouse/controls/UserAccount.ascx" TagName="account" TagPrefix="IRMS" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>IRMS-WareHouse Department</title>
+    <link rel="icon" type="image/x-icon" href="../Resources/favicon.ico">
+      <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<asp:ToolkitScriptManager ID="MarketingToolkitScriptManager" runat="server">
+        </asp:ToolkitScriptManager>
+    <div class="page">
+        
+        <div class="header">
+           <div class="title">
+             <a href="DashBoardPanel.aspx" >
+            <span>
+                IRMS
+            </span>
+            <br />
+            <span id ="irms_text">Integrated Resource Management System</span>
+                 </a>
+            </div>
+             <div style="float:left; margin:20px 50px 5px 20px;
+                  font-variant:small-caps; height:30px; font-size:20px; color:#4e5913; letter-spacing:2px; font-weight:bold; text-shadow: 1px 1px 0px #A0B051;">
+                  Warehouse Department</div>
+           <div class="loginDisplay">
+            <IRMS:account ID="account" runat="server" />
+           <%-- <p>
+            [Version <asp:Label ID="lblVersion" runat="server" Text=""></asp:Label>]
+            <br />
+            Current User : &nbsp;<B><asp:Label ID="lblUser" runat="server" Text="NONE"></asp:Label></B>&nbsp;
+                <asp:LinkButton ID="lnkbtnLogin" runat="server"  onclick="lnkbtnLogin_Click">[Login]</asp:LinkButton>
+                </p>--%>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/WareHouse/DashBoardPanel.aspx" 
+                            Text="WAREHOUSE DASHBOARD" Value="WAREHOUSE DASHBOARD"/>
+                        <asp:MenuItem NavigateUrl="~/WareHouse/ForwarderManagementPanel.aspx" 
+                            Text="FORWARDERS" ToolTip="Manage Forwarders" Value="FORWARDERS">
+                        </asp:MenuItem> 
+                        <asp:MenuItem NavigateUrl="~/WareHouse/DeliveriesMenu.aspx" Text="DELIVERIES / SALES INVOICE" 
+                            Value="DELIVERIES"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/WareHouse/ReturnAndTransfer.aspx" 
+                            Text="RETURNS AND TRANSFER" Value="RETURNS AND TRANSFER"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/WareHouse/DailyReportPanel.aspx" Text="REPORTS" 
+                            Value="REPORTS"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+         Developed by: <a href ="http://www.iserve.biz" target="_blank" >iServe Customer Management Solution Inc.</a>
+        <br />
+        iServe Customer Management Solution Inc. © 2011. All rights reserved. 
+    </div>
+    </form>
+</body>
+</html>
