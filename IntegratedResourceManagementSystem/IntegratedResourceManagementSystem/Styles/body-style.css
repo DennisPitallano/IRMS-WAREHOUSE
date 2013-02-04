@@ -1,0 +1,37 @@
+﻿/* File Created: May 11, 2012 */
+.titleList
+     {
+         /*09301212163*/
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#848484), color-stop(0.6, #a1a1a1));
+        background-image : -moz-linear-gradient(top, #c9c9c9, #848484, #a1a1a1 90%);
+        height : 20px;
+        color : White;
+     }
+     
+     .btnCancel
+    {
+        font-family:Verdana ;
+        font-weight :bold;
+        font-size: 10px;
+        height : 30px;
+        text-align :right;
+        background-image:url('../Resources/closedtabs-attention-hover.png'),-webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#848484), color-stop(0.6, #a1a1a1));
+         background-image:url('../Resources/closedtabs-attention-hover.png'),-moz-linear-gradient(top, #c9c9c9, #848484, #a1a1a1 90%);
+        background-repeat:no-repeat;
+        background-position:left;
+        color:#FCFCFC;
+        width: 150px;
+        height:30px;
+        cursor:pointer;
+    }
+    .btnCancel:hover
+    {
+          margin-top:1px;
+        background-image:url('../Resources/closedtabs-attention-hover.png'),-webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#848484), color-stop(0.6, #a1a1a1));
+         background-image:url('../Resources/closedtabs-attention-hover.png'),-moz-linear-gradient(top, #c9c9c9, #848484, #a1a1a1 90%);
+        background-repeat:no-repeat;
+        background-position:left;
+          background-repeat :no-repeat;
+          background-position:left;
+          color:#FFFFCC;
+    }

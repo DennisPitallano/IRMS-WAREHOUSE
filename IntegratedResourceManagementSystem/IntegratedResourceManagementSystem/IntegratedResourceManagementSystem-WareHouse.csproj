@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{418F9B78-7384-4F84-9B85-7FBDFA0D56B1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntegratedResourceManagementSystem</RootNamespace>
+    <AssemblyName>IntegratedResourceManagementSystem-WareHouse</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="IRMS.Components, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="IRMS.Entities">
+      <HintPath>..\..\..\Marketing Department\IntegratedResourceManagementSystem\IRMS.Entities\bin\Debug\IRMS.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\IRMS.mdf" />
+    <Content Include="App_Data\IRMS_log.ldf">
+      <DependentUpon>IRMS.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\deliveries.png" />
+    <None Include="Resources\crs.png" />
+    <None Include="Resources\customerreturn.png" />
+    <None Include="Resources\transaction.png" />
+    <None Include="Resources\advance_search.png" />
+    <None Include="Resources\29.gif" />
+    <None Include="Resources\loader.gif" />
+    <None Include="Resources\crissa_bg.jpg" />
+    <None Include="Resources\forwarder.png" />
+    <None Include="Resources\HWcar-5-icon %282%29.png" />
+    <None Include="Resources\HWcar-5-icon %283%29.png" />
+    <Content Include="Reports\ReportForms\DailyReport.aspx" />
+    <None Include="Resources\unhappy.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\username.png" />
+    <None Include="Resources\calendar-icon.png" />
+    <Content Include="Reports\ReportForms\DetailedReportPerOutlet.aspx" />
+    <Content Include="Reports\ReportForms\MonthlyConsolidatedReport.aspx" />
+    <Content Include="Reports\ReportForms\MonthlyPullOutSummaryPerBrandReport.aspx" />
+    <Content Include="Reports\ReportForms\MonthlyPullOutSummaryPerCustomer.aspx" />
+    <Content Include="Resources\accounting.png" />
+    <Content Include="Resources\adjustment.png" />
+    <Content Include="Resources\arrow.png" />
+    <Content Include="Resources\chat.png" />
+    <Content Include="Resources\close_infobar.png" />
+    <Content Include="Resources\error.png" />
+    <Content Include="Resources\favicon.ico" />
+    <Content Include="Resources\filtericon.png" />
+    <Content Include="Resources\group_closed.png" />
+    <Content Include="Resources\group_open.png" />
+    <Content Include="Resources\imageupicon.png" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\invoice.png" />
+    <Content Include="Resources\mail_new.png" />
+    <Content Include="Resources\mail_read.png" />
+    <Content Include="Resources\menu_tools.png" />
+    <Content Include="Resources\news_group.png" />
+    <Content Include="Resources\ok.png" />
+    <Content Include="Resources\openfile.png" />
+    <Content Include="Resources\pin-icon.png" />
+    <Content Include="Resources\private.png" />
+    <Content Include="Resources\question.png" />
+    <Content Include="Resources\Refresh.png" />
+    <Content Include="Resources\settings_16px.png" />
+    <Content Include="Resources\tab_contacts.png" />
+    <Content Include="Resources\texture.jpg" />
+    <Content Include="Resources\transfer_loading_waiting.png" />
+    <Content Include="Scripts\jquery-1.7.2.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Styles\account.css" />
+    <Content Include="Styles\body-style.css" />
+    <Content Include="Styles\crs.css" />
+    <Content Include="Styles\deliveries.css" />
+    <Content Include="Styles\forwarder-management.css" />
+    <Content Include="Styles\grid.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\modal-controls.css" />
+    <Content Include="Styles\sales-invoice.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\soi-form.css" />
+    <Content Include="Styles\toolbar-controls.css" />
+    <Content Include="WareHouse\AddForwarderCustomers.aspx" />
+    <Content Include="WareHouse\controls\CancelTransactionMenu.ascx" />
+    <None Include="Resources\irms.png" />
+    <None Include="Resources\submenu.png" />
+    <None Include="Resources\submenuh.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\product_brand.png" />
+    <None Include="Resources\knits_.png" />
+    <None Include="Resources\garments.png" />
+    <None Include="Resources\color.png" />
+    <None Include="Resources\size.png" />
+    <None Include="Resources\Barcode.png" />
+    <None Include="Resources\Shirt.png" />
+    <None Include="Resources\Barcode_summary.png" />
+    <None Include="Resources\color_summary.png" />
+    <None Include="Resources\fabric_summary.png" />
+    <None Include="Resources\garments_summary.png" />
+    <None Include="Resources\product_brand_summary.png" />
+    <None Include="Resources\product_summary.png" />
+    <None Include="Resources\size_summary.png" />
+    <None Include="Resources\summary.png" />
+    <None Include="Resources\cancel_gray.png" />
+    <None Include="Resources\cancel_normal.png" />
+    <None Include="Resources\delete_gray.png" />
+    <None Include="Resources\delete_normal.png" />
+    <None Include="Resources\edit_gray.png" />
+    <None Include="Resources\edit_normal.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\new_gray.png" />
+    <None Include="Resources\print_gray.png" />
+    <None Include="Resources\print_normal.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save_normal.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\bkModal.png" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\yes.png" />
+    <None Include="Resources\category.png" />
+    <None Include="Resources\unisex_polo_.png" />
+    <None Include="Resources\unisex_pants1_.png" />
+    <None Include="Resources\Dress_.png" />
+    <None Include="Resources\skirts_.png" />
+    <None Include="Resources\panels.png" />
+    <None Include="Resources\usermode.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\closedtabs-attention-hover.png" />
+    <None Include="Resources\first.png" />
+    <None Include="Resources\last.png" />
+    <None Include="Resources\SALES.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\reply.png" />
+    <Content Include="Styles\warehouse.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="WareHouse\controls\CRSMenu.ascx" />
+    <Content Include="WareHouse\controls\DeliveriesMenu.ascx" />
+    <Content Include="WareHouse\controls\InventoryMenu.ascx" />
+    <Content Include="WareHouse\controls\ReturnAndTransferMenu.ascx" />
+    <Content Include="WareHouse\controls\styles\memo-menu.css" />
+    <Content Include="WareHouse\controls\styles\menu-style.css" />
+    <Content Include="WareHouse\controls\TransactionsStatus.ascx" />
+    <Content Include="WareHouse\controls\UCLoader.ascx" />
+    <Content Include="WareHouse\controls\UserAccount.ascx" />
+    <Content Include="WareHouse\CRSConfirmationMenu.aspx" />
+    <Content Include="WareHouse\ReturnsManagementPanel.aspx" />
+    <Content Include="WareHouse\CustomerReturnSlipPanel.aspx" />
+    <Content Include="WareHouse\DailyReportPanel.aspx" />
+    <Content Include="WareHouse\DashBoardPanel.aspx" />
+    <Content Include="WareHouse\DeliveriesMenu.aspx" />
+    <Content Include="WareHouse\DeliveryDetails.aspx" />
+    <Content Include="WareHouse\DeliveryReceiptPanel.aspx" />
+    <Content Include="WareHouse\forms\ForwarderForm.ascx" />
+    <Content Include="WareHouse\ForwarderManagementPanel.aspx" />
+    <Content Include="WareHouse\IntegratedLogin.aspx" />
+    <Content Include="WareHouse\Login.aspx" />
+    <Content Include="WareHouse\NewForwarderForm.aspx" />
+    <Content Include="WareHouse\ReturnAndTransfer.aspx" />
+    <Content Include="WareHouse\ReturnsDetails.aspx" />
+    <Content Include="WareHouse\SalesInvoiceDetails.aspx" />
+    <Content Include="WareHouse\SalesInvoicePanel.aspx" />
+    <Content Include="WareHouse\Transactions.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WareHouse\WareHouse.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyCRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyCRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyCRSItin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyCRSItin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyCRSSumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyCRSSumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyDR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyDR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyDRItin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyDRItin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailyDRSumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyDRSumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailySI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailySI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailySIItin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailySIItin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\DailySISumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailySISumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutConsolidatedMonthly.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutConsolidatedMonthly.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutDetailedPerOutletRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutDetailedPerOutletRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutSummaryPerBrandBTQRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutSummaryPerBrandBTQRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutSummaryPerBrandDEPTSTORERpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutSummaryPerBrandDEPTSTORERpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutSummaryPerBrandPROVRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutSummaryPerBrandPROVRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\PullOutSummaryPerOutletRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PullOutSummaryPerOutletRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\rptMergePLandDR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMergePLandDR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\RptOverallComparative.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOverallComparative.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\RptOverallComparativePerBrand.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOverallComparativePerBrand.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportDocuments\RptStyle_StockCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptStyle_StockCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ReportForms\DailyReport.aspx.cs">
+      <DependentUpon>DailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\DailyReport.aspx.designer.cs">
+      <DependentUpon>DailyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\DetailedReportPerOutlet.aspx.cs">
+      <DependentUpon>DetailedReportPerOutlet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\DetailedReportPerOutlet.aspx.designer.cs">
+      <DependentUpon>DetailedReportPerOutlet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyConsolidatedReport.aspx.cs">
+      <DependentUpon>MonthlyConsolidatedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyConsolidatedReport.aspx.designer.cs">
+      <DependentUpon>MonthlyConsolidatedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyPullOutSummaryPerBrandReport.aspx.cs">
+      <DependentUpon>MonthlyPullOutSummaryPerBrandReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyPullOutSummaryPerBrandReport.aspx.designer.cs">
+      <DependentUpon>MonthlyPullOutSummaryPerBrandReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyPullOutSummaryPerCustomer.aspx.cs">
+      <DependentUpon>MonthlyPullOutSummaryPerCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\MonthlyPullOutSummaryPerCustomer.aspx.designer.cs">
+      <DependentUpon>MonthlyPullOutSummaryPerCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\AddForwarderCustomers.aspx.cs">
+      <DependentUpon>AddForwarderCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\AddForwarderCustomers.aspx.designer.cs">
+      <DependentUpon>AddForwarderCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\CancelTransactionMenu.ascx.cs">
+      <DependentUpon>CancelTransactionMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\CancelTransactionMenu.ascx.designer.cs">
+      <DependentUpon>CancelTransactionMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\CRSMenu.ascx.cs">
+      <DependentUpon>CRSMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\CRSMenu.ascx.designer.cs">
+      <DependentUpon>CRSMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\DeliveriesMenu.ascx.cs">
+      <DependentUpon>DeliveriesMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\DeliveriesMenu.ascx.designer.cs">
+      <DependentUpon>DeliveriesMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\InventoryMenu.ascx.cs">
+      <DependentUpon>InventoryMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\InventoryMenu.ascx.designer.cs">
+      <DependentUpon>InventoryMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\ReturnAndTransferMenu.ascx.cs">
+      <DependentUpon>ReturnAndTransferMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\ReturnAndTransferMenu.ascx.designer.cs">
+      <DependentUpon>ReturnAndTransferMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\TransactionsStatus.ascx.cs">
+      <DependentUpon>TransactionsStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\TransactionsStatus.ascx.designer.cs">
+      <DependentUpon>TransactionsStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\UCLoader.ascx.cs">
+      <DependentUpon>UCLoader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\UCLoader.ascx.designer.cs">
+      <DependentUpon>UCLoader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\controls\UserAccount.ascx.cs">
+      <DependentUpon>UserAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\controls\UserAccount.ascx.designer.cs">
+      <DependentUpon>UserAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\CRSConfirmationMenu.aspx.cs">
+      <DependentUpon>CRSConfirmationMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\CRSConfirmationMenu.aspx.designer.cs">
+      <DependentUpon>CRSConfirmationMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\ReturnsManagementPanel.aspx.cs">
+      <DependentUpon>ReturnsManagementPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\ReturnsManagementPanel.aspx.designer.cs">
+      <DependentUpon>ReturnsManagementPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\CustomerReturnSlipPanel.aspx.cs">
+      <DependentUpon>CustomerReturnSlipPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\CustomerReturnSlipPanel.aspx.designer.cs">
+      <DependentUpon>CustomerReturnSlipPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\DailyReportPanel.aspx.cs">
+      <DependentUpon>DailyReportPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\DailyReportPanel.aspx.designer.cs">
+      <DependentUpon>DailyReportPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\DashBoardPanel.aspx.cs">
+      <DependentUpon>DashBoardPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\DashBoardPanel.aspx.designer.cs">
+      <DependentUpon>DashBoardPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\DeliveriesMenu.aspx.cs">
+      <DependentUpon>DeliveriesMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\DeliveriesMenu.aspx.designer.cs">
+      <DependentUpon>DeliveriesMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\DeliveryDetails.aspx.cs">
+      <DependentUpon>DeliveryDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\DeliveryDetails.aspx.designer.cs">
+      <DependentUpon>DeliveryDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\DeliveryReceiptPanel.aspx.cs">
+      <DependentUpon>DeliveryReceiptPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\DeliveryReceiptPanel.aspx.designer.cs">
+      <DependentUpon>DeliveryReceiptPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\forms\ForwarderForm.ascx.cs">
+      <DependentUpon>ForwarderForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\forms\ForwarderForm.ascx.designer.cs">
+      <DependentUpon>ForwarderForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\ForwarderManagementPanel.aspx.cs">
+      <DependentUpon>ForwarderManagementPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\ForwarderManagementPanel.aspx.designer.cs">
+      <DependentUpon>ForwarderManagementPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\IntegratedLogin.aspx.cs">
+      <DependentUpon>IntegratedLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\IntegratedLogin.aspx.designer.cs">
+      <DependentUpon>IntegratedLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\NewForwarderForm.aspx.cs">
+      <DependentUpon>NewForwarderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\NewForwarderForm.aspx.designer.cs">
+      <DependentUpon>NewForwarderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\ReturnAndTransfer.aspx.cs">
+      <DependentUpon>ReturnAndTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\ReturnAndTransfer.aspx.designer.cs">
+      <DependentUpon>ReturnAndTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\ReturnsDetails.aspx.cs">
+      <DependentUpon>ReturnsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\ReturnsDetails.aspx.designer.cs">
+      <DependentUpon>ReturnsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\SalesInvoiceDetails.aspx.cs">
+      <DependentUpon>SalesInvoiceDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\SalesInvoiceDetails.aspx.designer.cs">
+      <DependentUpon>SalesInvoiceDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\SalesInvoicePanel.aspx.cs">
+      <DependentUpon>SalesInvoicePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\SalesInvoicePanel.aspx.designer.cs">
+      <DependentUpon>SalesInvoicePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse\WareHouse.Master.cs">
+      <DependentUpon>WareHouse.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse\WareHouse.Master.designer.cs">
+      <DependentUpon>WareHouse.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IRMS.BusinessLogic\IRMS.BusinessLogic.csproj">
+      <Project>{61074899-1B6E-468F-8381-1BBAA09ACE95}</Project>
+      <Name>IRMS.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IRMS.ObjectModel\IRMS.ObjectModel.csproj">
+      <Project>{C733A9C1-25EF-4B67-834B-932CC63D4D35}</Project>
+      <Name>IRMS.ObjectModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyCRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyCRS.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyCRSItin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyCRSItin.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyCRSSumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyCRSSumm.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyDR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyDR.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyDRItin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyDRItin.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailyDRSumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailyDRSumm.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailySI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailySI.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailySIItin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailySIItin.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\DailySISumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DailySISumm.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutConsolidatedMonthly.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutConsolidatedMonthly.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutDetailedPerOutletRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutDetailedPerOutletRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutSummaryPerBrandBTQRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutSummaryPerBrandBTQRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutSummaryPerBrandDEPTSTORERpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutSummaryPerBrandDEPTSTORERpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutSummaryPerBrandPROVRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutSummaryPerBrandPROVRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\PullOutSummaryPerOutletRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PullOutSummaryPerOutletRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\rptMergePLandDR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMergePLandDR.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\RptOverallComparative.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOverallComparative.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\RptOverallComparativePerBrand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOverallComparativePerBrand.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDocuments\RptStyle_StockCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptStyle_StockCard.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11006</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

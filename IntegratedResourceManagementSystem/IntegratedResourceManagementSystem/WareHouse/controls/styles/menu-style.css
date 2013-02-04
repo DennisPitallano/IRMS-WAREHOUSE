@@ -1,0 +1,55 @@
+﻿/* File Created: August 8, 2012 */
+/*Author: Dennis Pitallano */
+
+.menu-wrapper
+{
+	float: left; 
+	width: 100px;
+	 margin-right: 5px;
+}
+ .mnuIcon
+{
+	width: 80px;
+	height: 75px;
+	background-image: url('../../../Resources/submenu.png');
+	background-position: center;
+	background-repeat : no-repeat;
+	/*background-position   : 20px 2px, 0 0;*/
+	padding-top: 3px;
+	text-align: center;
+	padding-left: 3px;
+	opacity: 0.70;
+	text-shadow: 1px 1px 0px white;
+}
+.mnuIcon:hover
+{
+	background-image: url('../../../Resources/submenuh.png');
+	background-repeat: no-repeat;
+	padding-left: 5px;
+	color: Gray;
+	opacity: 1.0;
+}
+.lblMenu
+{
+	text-decoration: none;
+	color:#A65300;
+	cursor: pointer;
+	text-align: center;
+	font-family :Verdana;
+}
+.lblMenu:hover
+{
+	color: #376F00;
+	border-bottom: 1px;
+	border-bottom-style: dashed;
+}
+.title-menu {
+	margin-bottom: 10px;
+	color: #CC6600;
+	font-family: Verdana;
+	 font-size: 16px;
+	 font-weight: bold;
+	 line-height: 22px;
+	 text-shadow: 1px 1px 0px white;
+	 font-variant:small-caps;
+}
